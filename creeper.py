@@ -1,7 +1,9 @@
+""" creeper catch belle photos
+在原有的基础上进行了重构，拆分成了多个函数
+"""
+
 import requests
 import re
-
-""" creeper catch belle photos """
 
 
 URL = "http://tieba.baidu.com/p/2166231880"

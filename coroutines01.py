@@ -1,11 +1,11 @@
-import socket
-import logging
-from selectors import DefaultSelector, EVENT_READ, EVENT_WRITE
-
-
 """对于深入理解Python异步编程（上）当中的协程解决方案的学习和解读，第一个版本
 https://mp.weixin.qq.com/s/fxsQEUeZ2nEJq9CiDyrHZA
 """
+
+
+import socket
+import logging
+from selectors import DefaultSelector, EVENT_READ, EVENT_WRITE
 
 
 logging.basicConfig(level=logging.DEBUG,

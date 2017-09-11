@@ -1,7 +1,10 @@
+"""我自己的单线程爬虫，爬取10次计算时间"""
+
 from concurrent.futures import ThreadPoolExecutor
 import time
 
 from creeper import get_html, get_picture_url_list, download_one, URL
+
 
 MAX_WORKERS = 20
 

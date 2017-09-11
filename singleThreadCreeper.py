@@ -1,3 +1,5 @@
+"""我自己的单线程爬虫，爬取10次计算时间"""
+
 import time
 
 from creeper import download_all, URL, get_picture_url_list, get_html

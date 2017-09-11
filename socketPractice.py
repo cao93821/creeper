@@ -1,3 +1,8 @@
+"""分别用阻塞式同步、阻塞式多线程、阻塞式多进程、非阻塞式同步、
+非阻塞式异步这几种方式实现爬取10次example.com的任务
+"""
+
+
 import socket
 import time
 from concurrent import futures
@@ -100,6 +105,7 @@ def non_blocking_way2():
     except BlockingIOError:
         pass
     selector.register(sock.fileno(), EVENT_WRITE, connect)
+
 
 if __name__ == '__main__':
     current = float(time.time())
