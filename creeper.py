@@ -24,6 +24,7 @@ def download_one(img_url, index):
     img = requests.get(img_url).content
     with open('test/{}.{}'.format(index, img_url[-img_url[::-1].find('.'):]), 'wb') as f:
         f.write(img)
+        print(img)
 
 
 def download_all(url_list):

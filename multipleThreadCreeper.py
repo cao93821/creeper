@@ -1,4 +1,4 @@
-"""我自己的单线程爬虫，爬取10次计算时间"""
+"""我自己的多线程爬虫，爬取10次计算时间"""
 
 from concurrent.futures import ThreadPoolExecutor
 import time
